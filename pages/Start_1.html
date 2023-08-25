@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 1 | Tenant</title>
+    <link rel="icon" type="image" href="../media/favicon.png">
+    <!-- LINKS BELOW IS FOR BOOSTRAP -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <!-- LINK BELOW IS FOR FONT-FAMILY-POPPINS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- LINK BELOW IS FOR PADDING KINEME -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+
+    <!-- LINK BELOW IS FOR ICONS -->
+
+    <script src="https://kit.fontawesome.com/0b0cb22309.js" crossorigin="anonymous"></script>
+
+    <!-- INTERNAL CSS; Note to self: Arrange styles alpabetically. -->
+
+  
+
+    <style>
+
+        nav a:hover{
+          color: rgba(255, 255, 255, .5) !important; 
+        }
+
+        #active-btn{
+            color: #3c00a0;
+            background-color: white;
+            border-radius: 3px;
+        }
+        
+        .bg-color{
+            background-color:#3c00a0 ;
+            color: white;
+        }
+
+        body{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)), url(../media/bg-community.jpg);
+            background-position: center;
+            background-size: cover;
+            background-position: relative;
+            background-attachment: fixed;
+            font-family: 'Poppins';
+        }
+
+        .font-color{
+            color:#3c00a0;
+        }
+
+        .font-poppins{
+            font-family: 'Poppins';
+        }
+
+        .round-corner {
+            border-radius: 20px;
+            
+        }
+
+        .text-color-white{
+            color: white;
+        }
+
+        .transparent {
+            background-color: transparent !important;
+           
+        }
+
+        .img-dimension{
+            height: 100px;
+        }
+      
+        
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand font-poppins text-color-white" href="Home.html" style="font-weight: 700; font-size: 1.5em;">Tenant</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link font-poppins text-color-white" href="Start_1.html">Start</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link font-poppins text-color-white" aria-current="page" href="About.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font-poppins text-color-white" href="Contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle font-poppins text-color-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Profile
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- <li><a class="dropdown-item font-poppins" href="#"><i class="fa-solid fa-user"></i>   View Profile </a></li>
+                  <li><a class="dropdown-item font-poppins" href="#"><i class="fa-solid fa-pen-to-square"></i>   Edit Profile</a></li>
+                  <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item font-poppins" href="../index.html"> <i class="fa-solid fa-right-from-bracket"></i>   Log Out</a></li>
+                </ul>
+              </li>
+             
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 font-poppins" type="search"  aria-label="Search">
+              <button class="btn btn-primary btn-outline bg-color font-poppins" type="submit" style="border: none;">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <br>
+   
+
+    
+
+    <!-- START FORM -->
+
+    <!-- PLACE FILTERS -->
+
+    <div class="container col-md-6 col-sm-10">
+
+        <p class="h1 font-poppins text-white text-center py-5" style="font-weight: 700;"> Let's Start! </p>
+
+        <p class="h4 font-poppins text-white text-center py-3 text-primary" style="font-weight: 500;"> Step 1 of 4 </p>
+
+        <p class="h4 font-poppins text-white text-center py-3" style="font-weight: 500;"> Location </p>
+
+        <div class="container">
+
+            <div class="row ">
+
+                <div class="col-6 gy-3">
+
+                    <div class="mb-3  my-2">
+                        <label for="formGroupExampleInput" class="form-label text-white">Region:</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected></option>
+                            <option value="1">Ilocos Region (Region I)</option>
+                            <option value="2">Cagayan Valley (Region II)</option>
+                            <option value="3">Central Luzon (Region III)</option>
+                            <option value="4">CALABARZON (Region IV-A)</option>
+                            <option value="5">Bicol Region (Region V)</option>
+                            <option value="6">National Capital Region (NCR)</option>
+                            <option value="7">Cordillera Administrative Region (CAR)</option>
+                            <option value="8">MIMAROPA Region</option>                           
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="col-6 gy-3">
+
+                    <div class="mb-3  my-2">
+                        <label for="formGroupExampleInput" class="form-label text-white">City:</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected></option>
+                            <option value="1">Manila</option>
+                            <option value="2">Pasig</option>
+                            <option value="3">Pasay</option>
+                            <option value="4">Navotas</option>
+                            <option value="5">Valenzuela</option>
+                            <option value="6">Parañaque</option>
+                            <option value="7">Quezon</option>
+                            <option value="8">Caloocan</option>
+                            <option value="9">San Juan</option>
+                            <option value="10">Malabon</option>
+                            <option value="11">Marikina</option>
+                            <option value="12">Mandaluyong</option>
+                        </select>
+                    </div>
+
+                </div>                          
+
+            </div>
+
+            
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-6  gy-3">
+
+                    <div class="mb-3  my-2">
+                        <label for="formGroupExampleInput" class="form-label text-white">Barangay:</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected></option>
+                            <option value="1">Baong Ilog</option>
+                            <option value="2">Bambang</option>
+                            <option value="3">Caniogan</option>
+                            <option value="4">Kalawaan</option>
+                            <option value="5">Malinao</option>
+                            <option value="6">Maybunga</option>
+                            <option value="7">Pinagbuhatan</option>
+                            <option value="8">Rosario</option>
+                            <option value="9">San Joaquin</option>
+                            <option value="10">Sumilang</option>
+                            <option value="11">Ugong</option>
+                        
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="col-6 gy-3">
+
+                    <div class="mb-3  my-2">
+                        <label for="formGroupExampleInput" class="form-label text-white">Zip Code:</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected></option>
+                            <option value="1">1601</option>
+                            <option value="2">1602</option>
+                            <option value="3">1603</option>
+                            <option value="4">1604</option>
+                            <option value="5">1605</option>
+                            <option value="6">1606</option>
+                            <option value="7">1607</option>
+                            <option value="8">1608</option>
+                            <option value="9">1609</option>
+                            <option value="10">1610</option>
+                            <option value="11">1611</option>
+                        
+                        </select>
+                    </div>
+
+                </div>               
+
+            </div>
+            
+        </div>
+
+        <!-- AMENITIES -->
+
+        <hr class="border my-5">
+
+        <p class="h4 font-poppins text-white py-3 text-center" style="font-weight: 500;"> Amenities </p>
+
+        <div class="container">
+
+        <div class="row">
+
+            <div class="col-6 gy-3">
+
+                <label for="Bedroom" class="form-label text-white d-block">Bedroom:</label>
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="radio" name="bedroom" id="bedroom" checked>
+                    <label class="form-check-label text-white" for="bedroom">
+                        0
+                    </label>
+                    </div>
+                    <div class="form-check-inline">
+                    <input class="form-check-input" type="radio" name="bedroom" id="bedroom">
+                    <label class="form-check-label text-white" for="bedroom">
+                        1
+                    </label>
+                    </div>
+                    <div class="form-check-inline">
+                    <input class="form-check-input" type="radio" name="bedroom" id="bedroom">
+                    <label class="form-check-label text-white" for="bedroom">
+                        2
+                    </label>
+                    </div>
+                    <div class="form-check-inline">
+                    <input class="form-check-input" type="radio" name="bedroom" id="bedroom">
+                    <label class="form-check-label text-white" for="bedroom">
+                        3+
+                    </label>
+                </div>
+
+            </div>
+            
+
+            <div class="col-6 gy-3">
+
+                <label for="Bathroom" class="form-label text-white d-block">Bathroom:</label>
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="radio" name="Bathroom" id="Bathroom" checked>
+                    <label class="form-check-label text-white" for="bathroom">
+                     0
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <input class="form-check-input" type="radio" name="Bathroom" id="Bathroom">
+                    <label class="form-check-label text-white" for="bathroom">
+                      1
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <input class="form-check-input" type="radio" name="Bathroom" id="Bathroom">
+                    <label class="form-check-label text-white" for="bathroom">
+                      2+
+                    </label>
+                </div>
+                  
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-6 gy-3">
+
+                <label for="Kitchen" class="form-label text-white d-block">Kitchen:</label>
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="radio" name="Kitchen" id="Kitchen" checked>
+                    <label class="form-check-label text-white" for="Kitchen">
+                        0
+                    </label>
+                    </div>
+                    <div class="form-check-inline">
+                    <input class="form-check-input" type="radio" name="Kitchen" id="Kitchen">
+                    <label class="form-check-label text-white" for="Kitchen">
+                        1+
+                    </label>
+                </div>
+                    
+
+            </div>
+            
+
+            <div class="col-6 gy-3">
+
+                <label for="Living Room" class="form-label text-white d-block">Living Room:</label>
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="radio" name="Living Room" id="Living Room" checked>
+                    <label class="form-check-label text-white" for="Living Room">
+                     0
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <input class="form-check-input" type="radio" name="Living Room" id="Living Room">
+                    <label class="form-check-label text-white" for="Living Room">
+                      1+
+                    </label>
+                </div>
+                  
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-6 gy-3">
+
+                <label for="Dining Room" class="form-label text-white d-block">Dining Room:</label>
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="radio" name="Dining Room" id="Dining Room" checked>
+                    <label class="form-check-label text-white" for="Dining Room">
+                        0
+                    </label>
+                    </div>
+                    <div class="form-check-inline">
+                    <input class="form-check-input" type="radio" name="Dining Room" id="Dining Room">
+                    <label class="form-check-label text-white" for="Dining Room">
+                        1+
+                    </label>
+                </div>     
+
+            </div>
+            
+
+            <div class="col-6 gy-3">
+
+                <label for="Laundry Area" class="form-label text-white d-block">Laundry Area:</label>
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="radio" name="Laundry Area" id="Laundry Area" checked>
+                    <label class="form-check-label text-white" for="Laundry Area">
+                     0
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <input class="form-check-input" type="radio" name="Laundry Area" id="Laundry Area">
+                    <label class="form-check-label text-white" for="Laundry Area">
+                      1+
+                    </label>
+                </div>
+                  
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr class="border my-5">
+        
+    <p class="h4 font-poppins text-white py-3 text-center" style="font-weight: 500;"> Payment </p>
+
+    <div class="container">
+
+        <div class="row ">
+
+            <label for="payment" class="form-label text-white d-block">Rent Range per Month</label>
+
+            <div class="col-6">
+
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="minimum">
+                </div>
+
+            </div>
+
+            <div class="col-6">
+
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="maximum">
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <label for="payment" class="form-label text-white d-block">Payment Scheme</label>
+
+        <div class="mb-3  my-2">
+            
+            <select class="form-select" aria-label="Default select example">
+                <option selected></option>
+                <option value="1">Weekly</option>
+                <option value="2">Bi-monthly</option>
+                <option value="3">Monthly</option>
+               
+            </select>
+        </div>
+
+    </div>
+
+    <div class="container pb-4">
+
+        <label for="payment" class="form-label text-white d-block">Mode of Payment</label>
+
+        <div class="mb-3  my-2">
+            
+            <select class="form-select" aria-label="Default select example">
+                <option selected></option>
+                <option value="1">Cash</option>
+                <option value="2">Bank Transfer</option>
+                <option value="3">GCash</option>
+                <option value="4">Maya</option>
+                <option value="5">PayPal</option>
+               
+            </select>
+        </div>
+
+        <div class=" text-center mt-5">
+            <button type="button" class="btn btn-primary btn-lg w-25 mx-3 bg-color" style="border: none;"><a href="Start.html" class="text-white" style="text-decoration: none;">Back</a></button> 
+            <button type="button" class="btn btn-primary btn-lg w-25 mx-3 bg-color" style="border: none;"><a href="Start_2.html" class="text-white" style="text-decoration: none;">Next</a></button>
+        </div>    
+    </div>
+
+    
+     
+
+</div>   <!-- END NG GRAY KINEME -->
+
+
+            
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <!-- FOOTER -->
+    
+    <div class="container">
+        <footer class="pt-5">
+        <div class="row">
+            <div class="col-6 col-md-2 mb-2">
+            <h5 class="text-white">Help Center</h5>
+            <br>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQ</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Media Center</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Redeem Gift Cards</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Terms of Use</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Corporate Information</a></li>
+            </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-2">
+                <br>
+                <br>
+                <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Investor Relations</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Privacy</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Contact Us</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Only on Tenant</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Account</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-2">
+                <br>
+                <br>
+                <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Jobs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Ways to Rent</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Cookie Preferences</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Speed Test</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Buy Gift Cards</a></li>
+                </ul>
+            </div>
+            
+                <div class="col-md-5 offset-md-1 mb-2">
+                    <form>
+                    <h5 class="text-white">Subscribe to our newsletter</h5>
+                    <br>
+                    <p class="text-white">Monthly digest of what's new and exciting from us.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                        <button type="button" class="btn btn-primary bg-color" data-bs-toggle="modal" data-bs-target="#newsletter" style="border: none;">
+                            Subscribe
+                          </button>
+    
+                          <div class="modal fade" id="newsletter" tabindex="-1" aria-labelledby="newsletter" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Success!</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    You are now subscribed to our newsletter.
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Okay</button>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                    </div>
+                    </form>
+                </div>
+
+                </div>
+            
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+
+                <p class="text-white">© 2023 Tenant, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-facebook text-white" style="font-size: 1.5em;"></i></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-instagram text-white" style="font-size: 1.5em;"></i></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-twitter text-white" style="font-size: 1.5em;"></i></a></li>
+                </ul>
+
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
